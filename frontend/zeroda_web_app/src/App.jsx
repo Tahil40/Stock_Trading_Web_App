@@ -6,14 +6,15 @@ import PricingLayout from "./LandingPage/Pricing/PricingLayout";
 import ProductLayout from "./LandingPage/Products/ProductLayout";
 import SignUp from "./LandingPage/SignUp/SignUp";
 import SupportLayout from "./LandingPage/Support/SupportLayout";
-import Navbar from "./LandingPage/components/Navbar";
-import Footer from "./LandingPage/components/Footer";
+// import Navbar from "./LandingPage/components/Navbar";
+// import Footer from "./LandingPage/components/Footer";
+import NotFound from "./LandingPage/components/NotFound";
 
 function App() {
   return (
     <BrowserRouter>
     {/* adding navbar component */}
-    <Navbar/>
+    {/* <Navbar/> */}
     <Routes>
       <Route path="/" element={<HomeLayout/>}/>
       <Route path="/about" element={<AboutLayoutSection/>}/>
@@ -21,9 +22,10 @@ function App() {
       <Route path="/products" element={<ProductLayout/>}/>
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="/support" element={<SupportLayout/>}/>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
     {/* adding footer component */}
-    <Footer/>
+    {/* <Footer/> */}
     </BrowserRouter>
   );
 }

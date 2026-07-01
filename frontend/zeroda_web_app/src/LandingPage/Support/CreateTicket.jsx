@@ -3,7 +3,7 @@ import React from "react";
 const CreateTicket = () => {
     return(
         <>
-        Create Ticket
+        <h1>Create Ticket</h1>
         </>
     );
 };

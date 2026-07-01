@@ -6,13 +6,13 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom" style={{backgroundColor:"white", position:"fixed", left:"0", top:"0", right:"0", zIndex:"100"}}>
         <div className="container-fluid">
-          <a className="navbar-brand p-3" href="#">
+          <Link className="navbar-brand p-3" to={"/"}>
             <img
               src="/public/assets/media/images/logo.svg"
               alt="loading..."
               style={{ width: "30%" }}
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,29 +28,29 @@ const Navbar = () => {
             {/* ms-auto -> sets margin auto from right side, me-auto -> sets margin auto from left side. */}
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item px-2">
-                <a className="nav-link text-dark" aria-current="page" href="#">
+                <Link className="nav-link text-dark" aria-current="page" to={"/signup"}>
                   Signup
-                </a>
+                </Link>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-dark" href="#">
+                <Link className="nav-link text-dark" to={"/about"}>
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-dark" href="#">
+                <Link className="nav-link text-dark" to={"/products"}>
                   Products
-                </a>
+                </Link>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-dark" href="#">
+                <Link className="nav-link text-dark" to={"/pricing"}>
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link text-dark" href="#">
+                <Link className="nav-link text-dark" to={"/support"}>
                   Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
